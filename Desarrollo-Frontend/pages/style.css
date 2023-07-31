@@ -27,7 +27,7 @@
   --dl-color-color-negro2: #20201eff;
   --dl-color-paleta-light: #f1f6f9ff;
   --dl-size-size-maxwidth: 1400px;
-  --dl-color-color-naranja: #e3b04bff;
+  --dl-color-blue-dark: #0000FF;
   --dl-radius-radius-round: 50%;
   --dl-color-paleta-fonardo: #d9d9d9ff;
   --dl-space-space-halfunit: 8px;
@@ -71,7 +71,7 @@ select{
   border-radius: 2rem;
 }
 .input:focus {
-  border-color: var(--dl-color-color-naranja);
+  border-color: var(--dl-color-blue-dark);
 }
 
 .input:focus-visible {
@@ -355,7 +355,7 @@ select{
   margin-right: 0rem;
   border-radius: 2rem;
   justify-content: flex-end;
-  background-color: var(--dl-color-color-naranja);
+  background-color: var(--dl-color-blue-dark);
 }
 .popup-addbutton-img {
   width: 1.5rem;
@@ -450,7 +450,7 @@ select{
 }
 
 .buttonTransScale:hover {
-  color: var(--dl-color-color-naranja);
+  color: var(--dl-color-blue-dark);
   transform: scale(1.05);
 }
 .text-total {
@@ -498,7 +498,7 @@ select{
   background-color: var(--dl-color-gray-white);
 }
 .login-form-title {
-  color: var(--dl-color-color-naranja);
+  color: var(--dl-color-blue-dark);
   font-size: 1.5rem;
   align-self: center;
   font-style: normal;
@@ -541,7 +541,7 @@ select{
 }
 .login-button:hover {
   cursor: pointer;
-  background-color: var(--dl-color-color-naranja);
+  background-color: var(--dl-color-blue-dark);
 }
 .menu-section-img {
   width: 10rem;
@@ -562,14 +562,14 @@ select{
   margin-left: 1rem;
   border-width: 0px;
   margin-right: 1rem;
-  border-radius: 4rem;
+  border-radius: 0.3rem;
   margin-bottom: 0rem;
-  background-color: var(--dl-color-color-naranja);
+  background-color: var(--dl-color-blue-dark);
 }
 .menu-button:hover {
   width: auto;
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.6);
-  background-color: var(--dl-color-color-naranja);
+  background-color: var(--dl-color-blue-dark);
 }
 .reporte-main {
   width: 1000px;
@@ -810,7 +810,7 @@ select{
   align-items: center;
   margin-bottom: 0rem;
   justify-content: space-between;
-  background-color: var(--dl-color-color-naranja);
+  background-color: var(--dl-color-blue-dark);
 }
 .header-nav {
   flex: 0 0 auto;

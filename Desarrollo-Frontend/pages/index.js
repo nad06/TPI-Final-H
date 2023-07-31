@@ -37,11 +37,6 @@ const Menu = (props) => {
               className="menu-button button"
               onClick={()=>{setShowAddCompras(true)}}
             >
-              <img
-                alt="image"
-                src="/mas-1500w.png"
-                className="menu-button-icon"
-              />
               <span className="menu-button-text">Nueva compra</span>
             </button>
           </div>

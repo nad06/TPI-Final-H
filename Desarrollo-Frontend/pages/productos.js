@@ -8,26 +8,14 @@ const Productos = (props) => {
 
   return (
     <>
-      <div className="productos-container">
+      <div className="w-full">
         <Head>
           <title>Productos - Pedro's Bar</title>
           <meta property="og:title" content="Productos - TPI - Frontend" />
         </Head>
-        <Cabecera></Cabecera>
+        <Cabecera rootClassName="cabecera-root-class-name1"></Cabecera>
         <ListaProductos></ListaProductos>
       </div>
-      <style jsx>
-        {`
-          .productos-container {
-            width: 100%;
-            display: flex;
-            overflow: auto;
-            min-height: 100vh;
-            align-items: center;
-            flex-direction: column;
-          }
-        `}
-      </style>
     </>
   )
 }

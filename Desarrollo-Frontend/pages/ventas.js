@@ -7,26 +7,15 @@ import ListaVentas from '../components/lista-ventas'
 const Ventas = (props) => {
   return (
     <>
-      <div className="ventas-container">
+      <div className="w-full">
         <Head>
           <title>Ventas - Pedro's Bar</title>
           <meta property="og:title" content="Ventas - TPI - Frontend" />
         </Head>
-        <Cabecera></Cabecera>
+        <Cabecera rootClassName="cabecera-root-class-name1"></Cabecera>
         <ListaVentas rootClassName="lista-ventas-root-class-name"></ListaVentas>
       </div>
-      <style jsx>
-        {`
-          .ventas-container {
-            width: 100%;
-            display: flex;
-            overflow: auto;
-            min-height: 100vh;
-            align-items: center;
-            flex-direction: column;
-          }
-        `}
-      </style>
+
     </>
   )
 }

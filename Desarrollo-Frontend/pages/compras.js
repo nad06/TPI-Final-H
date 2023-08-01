@@ -7,7 +7,7 @@ import ListaCompras from '../components/lista-compras'
 const Compras = (props) => {
   return (
     <>
-      <div className="compras-container">
+      <div className="w-full">
         <Head>
           <title>Compras - Pedro's Bar</title>
           <meta property="og:title" content="Compras - TPI - Frontend" />
@@ -15,19 +15,7 @@ const Compras = (props) => {
         <Cabecera rootClassName="cabecera-root-class-name2"></Cabecera>
         <ListaCompras rootClassName="lista-compras-root-class-name"></ListaCompras>
       </div>
-      <style jsx>
-        {`
-          .compras-container {
-            width: 100%;
-            display: flex;
-            overflow: auto;
-            min-height: 100vh;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: flex-start;
-          }
-        `}
-      </style>
+     
     </>
   )
 }

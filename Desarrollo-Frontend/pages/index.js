@@ -15,8 +15,8 @@ const Menu = (props) => {
     <>
   <div className="w-full">
         <Head>
-          <title>Menu - Pedro's Bar</title>
-          <meta property="og:title" content="Menu - TPI - Frontend" />
+          <title>Bienvenido a Pedro's Bar</title>
+          <meta property="og:title" content="TPI - Frontend" />
         </Head>
         <Cabecera rootClassName="cabecera-root-class-name1"></Cabecera>
         

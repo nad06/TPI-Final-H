@@ -13,14 +13,46 @@ const Menu = (props) => {
 
   return (
     <>
-      <div className="menu-container">
+  <div className="w-full">
         <Head>
           <title>Menu - Pedro's Bar</title>
           <meta property="og:title" content="Menu - TPI - Frontend" />
         </Head>
         <Cabecera rootClassName="cabecera-root-class-name1"></Cabecera>
-        <div className="menu-container1">
-          <div className="menu-section">
+        
+        <nav className="bg-white shadow-lg">
+    <div className="md:flex items-center justify-between py-2 px-8 md:px-12">
+        <div className="flex justify-between items-center"> 
+            <div className="md:hidden">
+                <button type="button" className="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                    <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path className="hidden" d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"/>
+                        <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div> 
+    </div>
+</nav>
+<div className="flex bg-white estiloancho">
+    <div className="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+        <div>
+            <h2 className="text-3xl font-semibold text-gray-800 md:text-4xl">Bienvenidos al <span className="text-indigo-600">Bar de Pedro</span></h2>
+            <p className="mt-2 mb-8 text-sm text-gray-500 md:text-base">
+                Ésta a punto de ingresar a la pagina de compra y venta de productos de la cantidad de 
+                <span className="text-indigo-600"> Facultad Regional Resistencia</span>, 
+                por favor indique que desea realizar primero.</p>
+                <a className="mt-8 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" href="/options">Ingresar</a> 
+                <a className="ml-4 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" href="/client">Comprar</a> 
+        </div>
+    </div>
+    <div className="hidden lg:block lg:w-1/2 otroestilo" >
+        <div className="h-full object-cover estilo">
+            <div className="h-full bg-black opacity-25"></div>
+        </div>
+    </div>
+</div>
+
             <button
               id="botonNuevaVenta"
               type="button"
@@ -29,23 +61,17 @@ const Menu = (props) => {
             >
               <span className="menu-button-text">Nueva venta</span>
             </button>
-          </div>
-          <div className="menu-section menu-container3">
+          
             <button
               name="botonNuevaCompra"
               type="button"
               className="menu-button button"
               onClick={()=>{setShowAddCompras(true)}}
             >
-              <img
-                alt="image"
-                src="/mas-1500w.png"
-                className="menu-button-icon"
-              />
+              
               <span className="menu-button-text">Nueva compra</span>
             </button>
-          </div>
-        </div>
+        
 
         {
               showAddVentas? <AgregarVenta update={()=>{}}></AgregarVenta>: null
@@ -54,42 +80,7 @@ const Menu = (props) => {
               showAddCompras? <AgregarCompra update={()=>{}}></AgregarCompra>: null
         }
       </div>
-      <style jsx>
-        {`
-          .menu-container {
-            width: 100%;
-            display: flex;
-            overflow: auto;
-            min-height: 100vh;
-            align-items: center;
-            flex-direction: column;
-            justify-content: flex-start;
-            background-color: var(--dl-color-gray-white);
-          }
-          .menu-container1 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            padding: 0rem;
-            align-items: center;
-            border-radius: 2rem;
-            margin-bottom: 0rem;
-            flex-direction: row;
-            justify-content: center;
-            background-color: var(--dl-color-gray-white);
-          }
-          @media (max-width: 530px) {
-            .menu-container1 {
-              flex-direction: column;
-            }
-            .menu-container3 {
-              width: 100%;
-              flex-direction: column;
-            }
-          }
-        `}
-      </style>
+     
     </>
   )
 }

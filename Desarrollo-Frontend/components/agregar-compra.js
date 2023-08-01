@@ -101,22 +101,7 @@ const AgregarCompra = (props) => {
                   }}
                 />
               </div>
-              {/* <button
-                id="botonAgregarLineaVenta"
-                className="agregar-compra-btn-delete popup-addbutton btnRounded"
-                onClick={()=>{
-                  const newLineas = cantLineas;
-                  newLineas.push(0);
-                  setCantLineas(newLineas);
-                  console.log(cantLineas);
-                }}
-              >
-                <img
-                  alt="image"
-                  src="/mas-1500h.png"
-                  className="popup-addbutton-img"
-                />
-              </button> */}
+              
             </div>
             <div className="agregar-compra-lista">
               <div className="agregar-compra-encabezado popup-list-header">
@@ -229,8 +214,7 @@ const AgregarCompra = (props) => {
             border-radius: 3rem;
             flex-direction: column;
             background-color: var(--dl-color-color-blanco);
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
+            border-radius:0;
           }
           .agregar-compra-container04 {
             display: flex;
@@ -329,9 +313,9 @@ const AgregarCompra = (props) => {
             font-weight: 400;
             border-color: rgba(0, 0, 0, 0);
             border-width: 0px;
-            border-radius: 2rem;
+            border-radius: 3px;
             flex-direction: row;
-            background-color: var(--dl-color-color-naranja);
+            background-color: var(--dl-color-indigo-600);
           }
           .agregar-compra-button1:hover {
             transform: scale(1.05);

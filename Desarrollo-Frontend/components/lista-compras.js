@@ -67,29 +67,7 @@ const ListaCompras = (props) => {
                 <span>COMPRAS</span>
                 <br></br>
               </span>
-              <button 
-                className="lista-compras-btn-add button btnRounded"
-                onClick={()=>{setShowAddCompras(true)}}
-              >
-                <img
-                  alt="image"
-                  src="/mas-1500h.png"
-                  className="lista-compras-image"
-                />
-              </button>
-            </div>
-            <div className="lista-compras-container4">
-              <input
-                type="text"
-                placeholder="Buscar ID"
-                className="lista-compras-textinput input"
-                onChange={handleChange}
-              />
-              <img
-                alt="image"
-                src="/buscar-grey-1500w.png"
-                className="lista-compras-image1"
-              />
+              <button className="lista-compras-btn-add" onClick={()=>{setShowAddCompras(true)}}>Agregar Compra</button>
             </div>
           </div>
           <div className="lista-compras-container5">
@@ -167,38 +145,24 @@ const ListaCompras = (props) => {
             font-family: Poppins;
             font-weight: 600;
           }
+
           .lista-compras-btn-add {
-            width: 3rem;
+            width: 7rem;
             height: 3rem;
             align-self: center;
-            box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 0);
-            transition: 0.3s;
             align-items: center;
             margin-left: 1rem;
             margin-right: 0rem;
-            border-radius: 2rem;
-            background-color: var(--dl-color-color-naranja);
+            border-radius: 5px;
+            background-color: var(--dl-color-indigo-600);
+            color: var(--dl-color-gray-900);
+            font-family: Poppins;
           }
+
           .lista-compras-btn-add:hover {
-            transform: scale(1.05);
+            background-color: var(--dl-color-gray-500);
           }
-          .lista-compras-image {
-            width: 1.5rem;
-            height: 1.5rem;
-            object-fit: cover;
-          }
-          .lista-compras-container4 {
-            flex: 0 0 auto;
-            width: 20rem;
-            height: auto;
-            display: flex;
-            align-self: center;
-            align-items: center;
-            border-color: var(--dl-color-gray-500);
-            border-width: 1px;
-            border-radius: 3rem;
-            justify-content: flex-end;
-          }
+
           .lista-compras-textinput {
             width: auto;
             height: auto;
@@ -210,14 +174,7 @@ const ListaCompras = (props) => {
             border-width: 0px;
             background-color: transparent;
           }
-          .lista-compras-image1 {
-            width: 1.5rem;
-            height: auto;
-            align-self: center;
-            object-fit: cover;
-            margin-left: 1rem;
-            margin-right: 1rem;
-          }
+          
           .lista-compras-container5 {
             width: 100%;
             display: flex;
@@ -234,9 +191,8 @@ const ListaCompras = (props) => {
             flex-direction: row;
             padding-bottom: 0rem;
             justify-content: space-between;
-            background-color: var(--dl-color-gray-black);
-            border-top-left-radius: 2rem;
-            border-top-right-radius: 2rem;
+            background-color: var(--dl-color-indigo-600);
+            border-top-radius: 5px;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
           }
@@ -248,8 +204,8 @@ const ListaCompras = (props) => {
             align-self: center;
             align-items: center;
             justify-content: flex-start;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
           }
           .lista-compras-text2 {
             color: var(--dl-color-gray-white);
@@ -288,7 +244,7 @@ const ListaCompras = (props) => {
             margin-right: 1rem;
           }
           .lista-compras-text5 {
-            color: var(--dl-color-color-blanco);
+            color: var(--dl-color-gray-white);
             width: 10rem;
             height: auto;
             font-size: 1.2rem;
@@ -310,6 +266,8 @@ const ListaCompras = (props) => {
             background-color: var(--dl-color-color-negro);
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
           }
 
           @media (max-width: 1200px) {
@@ -417,11 +375,7 @@ const ListaCompras = (props) => {
               padding-right: 0.5rem;
               padding-bottom: 0.2rem;
             }
-            .lista-compras-image1 {
-              width: 1rem;
-              margin-left: 0.7rem;
-              margin-right: 0.7rem;
-            }
+            
             .lista-compras-encabezado {
               width: 100%;
               padding-left: 1rem;

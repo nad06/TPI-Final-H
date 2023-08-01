@@ -62,10 +62,10 @@ const AgregarCompra = (props) => {
   };
 
   const handleKeyDown = (event) => {
-    const maxLength = 20; // Establece la longitud máxima permitida
+    const maxLength = 20; 
 
     if (event.target.value.length >= maxLength) {
-      event.preventDefault(); // Previene la entrada de más dígitos
+      event.preventDefault(); 
     }
   };
 
@@ -94,7 +94,6 @@ const AgregarCompra = (props) => {
                   type="text"
                   placeholder="Nombre (opcional)"
                   className="popup-searchbar-input input agregar-compra-textinput"
-                  //Segun la base de datos el proveedor tiene longitud de varchar(50)
                   maxLength={50}
                   onChange={(e) => {
                     setProveedor(e.target.value);

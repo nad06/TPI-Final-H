@@ -99,16 +99,6 @@ const DetallesCompra = (props) => {
                   <br></br>
                 </span>
               </div>
-              {/* <button
-                id="botonEditarVenta"
-                className="detalles-compra-btn-delete btnRounded"
-              >
-                <img
-                  alt={props.image_alt81}
-                  src={props.image_src81}
-                  className="detalles-compra-image1"
-                />
-              </button> */}
             </div>
             <div className="detalles-compra-lista">
               <div className="detalles-compra-encabezado popup-list-header">

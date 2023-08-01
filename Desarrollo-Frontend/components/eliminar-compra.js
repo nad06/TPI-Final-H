@@ -66,7 +66,7 @@ const EliminarProducto = (props) => {
             max-width: 1000px;
             border-radius: 3px;
             flex-direction: row;
-            background-color: var(--dl-color-gray-black);
+            background-color: var(--dl-color-indigo-400);
           }
           .confirmar-eliminar-text02 {
             color: var(--dl-color-color-blanco);
@@ -96,7 +96,7 @@ const EliminarProducto = (props) => {
             border-radius: var(--dl-radius-radius-round);
             flex-direction: row;
             padding-bottom: 1rem;
-            background-color: var(--dl-color-indigo-400);
+          
           }
           .confirmar-eliminar-button:hover {
             transform: scale(1.05);
@@ -121,7 +121,6 @@ const EliminarProducto = (props) => {
             border-radius: var(--dl-radius-radius-round);
             flex-direction: row;
             padding-bottom: 1rem;
-            background-color: var(--dl-color-indigo-400);
           }
           .confirmar-eliminar-button1:hover {
             transform: scale(1.05);
